@@ -161,6 +161,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/test.yml`) th
 - Restores dependencies and builds the project
 - Installs Playwright browsers
 - Executes all tests in headless mode
+- GitHub Actions may show failures due to NASA API returning 200 instead of 400 for invalid inputs. This is expected and documented
 
 ## Known Issues and Limitations
 
