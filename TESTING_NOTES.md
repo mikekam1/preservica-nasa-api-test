@@ -2,7 +2,7 @@
 
 ## Project Setup
 
-**Date Started**: November 3, 2024  
+**Date Started**: October 31, 2025  
 **Framework**: SpecFlow + RestSharp + Playwright  
 **Target**: NASA DONKI API (CME & FLR endpoints) + Sign-up UI
 
@@ -79,9 +79,7 @@
 - Personal key has 1,000 req/hour limit
 - Code works with either key - just change the constant
 
-**Note**: This demonstrates real-world testing where you follow requirements (DEMO_KEY) but adapt when practical constraints arise. The switch is documented and reversible.
 
-**For Submission**: Project currently uses personal key but clearly documents DEMO_KEY was the starting point per requirements.
 
 ## Test Design Decisions
 
@@ -91,7 +89,6 @@
 - **Missing parameter**: Required field validation
 - **UI page load**: Accessibility and basic functionality
 
-Kept scenarios simple and focused. Could add more (boundary testing, concurrent requests) but exercise requirements covered.
 
 ### Step Definition Structure
 - Separate step files per endpoint (CME, FLR, Signup)
@@ -100,7 +97,7 @@ Kept scenarios simple and focused. Could add more (boundary testing, concurrent 
 
 ### Helper Class Approach
 - Created NasaApiHelper wrapper around RestSharp
-- Centralizes API calls
+- Centralises API calls
 - Makes step definitions cleaner
 - Easy to add retry logic or logging later
 
